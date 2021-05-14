@@ -1,7 +1,8 @@
 
+import logging
 import wx
-import app
 
+import app
 from classes.UIManager import UIManager
 
 
@@ -9,7 +10,7 @@ from classes.UIManager import UIManager
 Loads Application Initial Interface (MainWindow and it's children).
 """
 def load():
-    
+
     if wx.GetApp().get_main_window_controller():
         raise Exception("Main app Interface cannot be loaded again.")
     

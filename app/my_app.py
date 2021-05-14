@@ -1,4 +1,5 @@
 
+import logging
 import wx
 
 from classes import class_register
@@ -21,8 +22,12 @@ class MyApp(wx.App):
     #     ) 
         
     def OnInit(self):
+        logging.debug("Starting wxPython application...")
         self._mwc = None
+        #
+        logging.debug("Registering application classes...")
         class_register.register_app_classes()   
+        logging.debug("Loading application interface...")
         self.load_app_interface()  
         return True           
  

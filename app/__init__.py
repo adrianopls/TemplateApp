@@ -3,7 +3,7 @@
 # from pathlib import Path
 from pathlib import PurePath
 # import json
-# import logging
+import logging
 
 # import wx
 # import matplotlib
@@ -16,6 +16,13 @@ BASE_PATH = PurePath(__file__).parent.parent
 ICONS_REL_PATH = 'app/icons'
 
 ICONS_PATH = BASE_PATH.joinpath(BASE_PATH, ICONS_REL_PATH)
+
+
+
+logger = logging.getLogger()
+logger.setLevel(logging.DEBUG) 
+
+
 
 
 # def _read_app_definitions():
