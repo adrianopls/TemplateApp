@@ -1,15 +1,24 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu May 13 16:48:07 2021
 
-@author: Adriano
+"""
+This is file is used as the main place to Menu Functions.
+
+It's just a recomendation. With the callback system devoloped functions my
+go everywhere.
+
+Here there is an exemple of use. In the interface.py file we may have
+
+    UIM.create('menu_item_controller', mc_model.uid, 
+            label="&Load model", 
+            help="Load a model from file",
+            id=wx.ID_OPEN,
+            callback='app.menu_functions.on_open'
+    )   
+
+...witch will call on_open function above.
 """
 
 import os
 import wx
-
-from . import interface
-from classes.UIManager import UIManager
 
 
 def on_open(*args, **kwargs):
@@ -38,8 +47,3 @@ def on_open(*args, **kwargs):
         raise
 
 
-
-def on_open_model(*args, **kwargs):
-    UIM = UIManager()      
-    mwc = interface.get_main_window_controller()
-    UIM.create('crossplot_controller', mwc.uid)

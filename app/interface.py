@@ -19,11 +19,11 @@ def load():
     
     
     mwc = UIM.create('frame_controller', 
-                     icon='add.ico',  # Relative Path to icons dir
-                     size=(800, 600),
-                     pos=(100, 100),
-                     #maximized=True,
-                     title="That's My app!"
+                      icon='add.ico',  # Relative Path to icons dir
+                      size=(800, 600),
+                      pos=(100, 100),
+                      #maximized=True,
+                      title="That's My app!"
     )
     
     # mwc = UIM.create('main_window_controller', 
@@ -35,7 +35,7 @@ def load():
     # )
       
     # Tree Controller                                                          
-    UIM.create('tree_controller', mwc.uid)     
+    # UIM.create('tree_controller', mwc.uid)     
 
     # Menubar
     # menubar_ctrl = UIM.create('menubar_controller', mwc.uid)
