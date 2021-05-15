@@ -3,7 +3,7 @@ import logging
 import wx
 
 import app
-from classes.UIManager import UIManager
+from classes.uim import UIManager
 
 
 """
