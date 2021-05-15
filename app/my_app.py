@@ -5,7 +5,7 @@ import wx
 from classes import class_register
 from . import interface
 
-from classes.UIManager import UIManager
+from classes.uim import UIManager
 
 
 class MyApp(wx.App):

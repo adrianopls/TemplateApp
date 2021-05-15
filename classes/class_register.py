@@ -1,28 +1,28 @@
 
 
 # from classes.om import ObjectManager
-from .UIManager import UIManager
+from .uim import UIManager
 #
-from .UIManager import FrameController, Frame
-from .UIManager import DialogController, Dialog
-from .UIManager import TreeController, TreeView
+from .uim import FrameController, Frame
+from .uim import DialogController, Dialog
+from .uim import TreeController, TreeView
 #
-from .UIManager import MainWindowController, MainWindow
-from .UIManager import MenuBarController, MenuBarView
-from .UIManager import MenuController, MenuView
-from .UIManager import MenuItemController, MenuItemView
+from .uim import MainWindowController, MainWindow
+from .uim import MenuBarController, MenuBarView
+from .uim import MenuController, MenuView
+from .uim import MenuItemController, MenuItemView
 #
-from .UIManager import ToolBarController, ToolBar
-from .UIManager import ToolBarToolController
-from .UIManager import StatusBarController, StatusBar
+from .uim import ToolBarController, ToolBar
+from .uim import ToolBarToolController
+from .uim import StatusBarController, StatusBar
 #
-from .UIManager import CrossPlotController, CrossPlot
-from .UIManager import WorkPageController, WorkPage                                          
-from .UIManager import PropertyGridController, PropertyGridView
+from .uim import CrossPlotController, CrossPlot
+from .uim import WorkPageController, WorkPage                                          
+from .uim import PropertyGridController, PropertyGridView
 #                                            
-from .UIManager import CanvasPlotterController, CanvasPlotter                
-from .UIManager import TrackCanvasController, TrackCanvas   
-from .UIManager import TrackLabelController, TrackLabel
+from .uim import CanvasPlotterController, CanvasPlotter                
+from .uim import TrackCanvasController, TrackCanvas   
+from .uim import TrackLabelController, TrackLabel
                    
 
 
