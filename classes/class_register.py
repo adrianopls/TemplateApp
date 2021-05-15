@@ -1,7 +1,10 @@
 
+import logging
 
-# from classes.om import ObjectManager
+from classes.om.manager import ObjectManager
 from .uim import UIManager
+#
+from .om.well import Well
 #
 from .uim import FrameController, Frame
 from .uim import DialogController, Dialog
@@ -28,13 +31,16 @@ from .uim import TrackLabelController, TrackLabel
 
 
 def register_app_classes():
+    logging.debug("Registering ObjectManager classes...")
     register_OM_classes()
+    logging.debug("ObjectManager classes registered successfully")
+    logging.debug("Registering UIManager classes...")
     register_UIManager_classes()    
+    logging.debug("UIManager classes registered successfully")
     
     
 def register_OM_classes():
-    pass
-#     ObjectManager.register_class(Well)
+    ObjectManager.register_class(Well)
 #     ObjectManager.register_class(CurveSet, Well)
 #     ObjectManager.register_class(DataIndex, CurveSet)
 #     ObjectManager.register_class(Log, CurveSet)

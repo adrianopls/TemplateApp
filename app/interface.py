@@ -4,7 +4,7 @@ import wx
 
 import app
 from classes.uim import UIManager
-
+from classes.om import ObjectManager
 
 """
 Loads Application Initial Interface (MainWindow and it's children).
@@ -25,6 +25,13 @@ def load():
                       #maximized=True,
                       title="That's My app!"
     )
+ 
+    # OM = ObjectManager()    
+    # well = OM.new('well', name="MEU POCO SINISTRO") 
+    # print(well)
+    # print(well.name)
+        
+    
     
     # mwc = UIM.create('main_window_controller', 
     #                  icon='add.ico',  # Relative Path to icons dir

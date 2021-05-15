@@ -6,6 +6,7 @@ from classes import class_register
 from . import interface
 
 from classes.uim import UIManager
+from classes.om import ObjectManager
 
 
 class MyApp(wx.App):
@@ -46,6 +47,13 @@ class MyApp(wx.App):
               
     #TODO: REMOVER ISSO!!    
     def get_manager_class(self, obj_tid):
-        return UIManager    
-
-    
+        if obj_tid in ObjectManager._types:
+            return ObjectManager
+        elif obj_tid in UIManager._types:
+            return UIManager    
+        raise Exception('App.gripy_app.get_manager_class: Class {} has a '+\
+                        'unknown manager.'.format(obj_tid)
+        )
+            
+            
+            
