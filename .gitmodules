@@ -4,3 +4,6 @@
 [submodule "classes/UIManager"]
 	path = classes/UIManager
 	url = https://github.com/adrianopls/UIManager.git
+[submodule "classes/om"]
+	path = classes/om
+	url = https://github.com/adrianopls/ObjectManager.git
