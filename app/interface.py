@@ -17,16 +17,25 @@ def load():
     app = wx.GetApp()
     UIM = UIManager()
     
-    mwc = UIM.create('main_window_controller', 
+    
+    mwc = UIM.create('frame_controller', 
                      icon='add.ico',  # Relative Path to icons dir
                      size=(800, 600),
                      pos=(100, 100),
                      #maximized=True,
                      title="That's My app!"
     )
+    
+    # mwc = UIM.create('main_window_controller', 
+    #                  icon='add.ico',  # Relative Path to icons dir
+    #                  size=(800, 600),
+    #                  pos=(100, 100),
+    #                  #maximized=True,
+    #                  title="That's My app!"
+    # )
       
     # Tree Controller                                                          
-    # UIM.create('tree_controller', mwc.uid)     
+    UIM.create('tree_controller', mwc.uid)     
 
     # Menubar
     # menubar_ctrl = UIM.create('menubar_controller', mwc.uid)

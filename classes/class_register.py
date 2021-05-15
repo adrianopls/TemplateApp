@@ -5,6 +5,7 @@ from .UIManager import UIManager
 #
 from .UIManager import FrameController, Frame
 from .UIManager import DialogController, Dialog
+from .UIManager import TreeController, TreeView
 #
 from .UIManager import MainWindowController, MainWindow
 from .UIManager import MenuBarController, MenuBarView
@@ -114,7 +115,9 @@ def register_OM_classes():
 def register_UIManager_classes():
     UIManager.register_class(FrameController, Frame)
     UIManager.register_class(DialogController, Dialog)
+    UIManager.register_class(TreeController, TreeView, FrameController) 
     UIManager.register_class(MainWindowController, MainWindow)    
+    UIManager.register_class(TreeController, TreeView, MainWindowController) 
     UIManager.register_class(MenuBarController, MenuBarView, MainWindowController) 
     UIManager.register_class(MenuController, MenuView, MenuBarController)
     UIManager.register_class(MenuController, MenuView, MenuController)
