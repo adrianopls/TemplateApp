@@ -8,16 +8,23 @@ import logging
 # import wx
 # import matplotlib
 
+#from classes import uim
+#from classes.uim.base.manager import UIManager
+
+
+
 
 # INIT_FILE = '.gripy_app_config.json'
 
 
 BASE_PATH = PurePath(__file__).parent.parent
 ICONS_REL_PATH = 'app/icons'
-
 ICONS_PATH = BASE_PATH.joinpath(BASE_PATH, ICONS_REL_PATH)
-
-
+#
+#UIM = UIManager()
+#UIManager.APP_ICON = "signal_32_32.bmp"
+#uim.MAIN_ICON = "add.ico"
+#
 
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG) 

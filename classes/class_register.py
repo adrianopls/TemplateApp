@@ -27,7 +27,7 @@ from .uim import CanvasPlotterController, CanvasPlotter
 from .uim import TrackCanvasController, TrackCanvas   
 from .uim import TrackLabelController, TrackLabel
                    
-
+from .uim import ConsoleController, Console
 
 
 def register_app_classes():
@@ -142,8 +142,8 @@ def register_UIManager_classes():
     UIManager.register_class(CrossPlotController, CrossPlot, MainWindowController)
     UIManager.register_class(CrossPlotController, CrossPlot, FrameController)
     # 
-#    UIManager.register_class(ConsoleController, Console, MainWindowController)
-#    UIManager.register_class(ConsoleController, Console, FrameController)
+    UIManager.register_class(ConsoleController, Console, MainWindowController)
+    UIManager.register_class(ConsoleController, Console, FrameController)
     #    
 #    UIManager.register_class(TrackController, TrackView, WellPlotController)
     # UIManager.register_class(TrackObjectController, None,

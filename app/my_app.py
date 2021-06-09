@@ -32,6 +32,7 @@ class MyApp(wx.App):
         self.load_app_interface()  
         return True           
  
+    
     """
     When the MainWindow calls the function below, GripyApp will close UIManager 
     but not finish the wx.App.
@@ -39,9 +40,9 @@ class MyApp(wx.App):
     """
     # TODO: VERIFICAR ISSO, POIS O PREEXIT EVITA QUE OBJETO DO UIM FIQUEM PRESOS
     def PreExit(self):
-        msg = 'GriPy Application is preparing to terminate....'
-        logging.info(msg)
-        
+        msg = "Application is preparing to terminate...."
+        logging.debug(msg)
+        #
         OM = ObjectManager()
         UIM = UIManager()
         UIM.PreExit()
@@ -49,7 +50,7 @@ class MyApp(wx.App):
         
 
     def OnExit(self):
-        msg = 'GriPy Application has finished.'
+        msg = "Application has finished."" "
         logging.info(msg)
         return super().OnExit()    
  
